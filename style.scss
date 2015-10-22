@@ -1,3 +1,6 @@
+$header-color: #404040;
+$bg-image: "assets/skyline-buildings-new-york-skyscrapers.jpg";
+
 html, body {
     height: 100%;
     width: 100%;
@@ -6,7 +9,7 @@ html, body {
 }
 
 body {
-	background-image: url("assets/skyline-buildings-new-york-skyscrapers.jpg");
+	background-image: url( $bg-image );
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -46,7 +49,7 @@ body {
 
 #site-header, #under-header {
 	height: 75px;
-	background-color: #404040;
+	background-color: $header-color;
 }
 
 /*
@@ -63,5 +66,5 @@ body {
 
 #site-footer {
 	height: 400px;
-	background-color: #404040;
+	background-color: $header-color;
 }
