@@ -19,13 +19,13 @@ body {
     padding: 0;
 }
 
-#blog-post, #author-bio, .staff-bio {
+#blog-post, #author-bio, .post-preview {
 	height: 90%;
 	position: relative;
 	padding: 40px 40px;
 }
 
-.staff-bio {
+.post-preview {
 	height: 500px;
 	opacity: 1;
 }
@@ -56,7 +56,7 @@ body {
 }
 */
 
-#cyan-box {
+#posts-wrapper {
 	/* height: 500px; */
 	background-color: cyan;
 }
