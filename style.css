@@ -1,0 +1,67 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background-image: url("assets/skyline-buildings-new-york-skyscrapers.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	/* background-position: right top; */
+}
+
+.container-fluid {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#blog-post, #author-bio, .staff-bio {
+	height: 90%;
+	position: relative;
+	padding: 40px 40px;
+}
+
+.staff-bio {
+	height: 500px;
+	opacity: 1;
+}
+
+.row {
+    height: 100%;
+	padding: 15px;
+    background-color: #FFFFFF;
+    opacity: 0.75;
+    position: relative;
+    border-radius: 25px;
+    box-shadow: 0 0 5px #909090;
+}
+
+.scrolled {
+	opacity: 0;
+}
+
+#site-header, #under-header {
+	height: 75px;
+	background-color: #404040;
+}
+
+/*
+#site-header {
+	position: fixed;
+	z-index: 9999;
+}
+*/
+
+#cyan-box {
+	/* height: 500px; */
+	background-color: cyan;
+}
+
+#site-footer {
+	height: 400px;
+	background-color: #404040;
+}
