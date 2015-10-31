@@ -5,11 +5,10 @@ html, body {
   padding: 0; }
 
 body {
-  background-image: url("assets/skyline-buildings-new-york-skyscrapers.jpg");
+  background-image: url("assets/skyline-buildings-new-york-skyscrapers-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  /* background-position: right top; */ }
+  background-attachment: fixed; }
 
 .container-fluid {
   height: 100%;
