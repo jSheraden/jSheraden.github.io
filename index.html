@@ -1,23 +1,50 @@
----
-layout: default
----
+<!DOCTYPE html>
 
-<div class="home">
+<html lang="en-US">
 
-  <h1 class="page-heading">Posts</h1>
+<head>
+  <title>Welcome!</title>
+  <meta charset="utf-8">
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- <script src="bower_components/jquery/dist/jquery.min.js"></script> -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<body>
+  <div class="container-fluid">
+    <!-- Site header. -->
+    <div id="site-header" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+	<!-- <div id="under-header"></div> -->
+	
+	<!-- Current post. -->
+    <div id="blog-post" class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+      <div class="row"></div>
+    </div>
+    <div id="author-bio" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="row"></div>
+    </div>
+	
+	<!-- Blog posts. -->
+	<div id="posts-wrapper" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	  <div class="post-preview col-lg-3 col-md-4 col-sm-6 col-xs-12">
+	    <div class="row"><a href="#">Click Here.</a></div>
+	  </div>
+	  <div class="post-preview col-lg-3 col-md-4 col-sm-6 col-xs-12">
+	    <div class="row"></div>
+	  </div>
+	  <div class="post-preview col-lg-3 col-md-4 col-sm-6 col-xs-12">
+	    <div class="row"></div>
+	  </div>
+	  <div class="post-preview col-lg-3 col-md-4 col-sm-6 col-xs-12">
+	    <div class="row"></div>
+	  </div>
+	</div>
+	
+	<!-- Site footer. -->
+	<div id="site-footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+  </div>
+</body>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</html>
