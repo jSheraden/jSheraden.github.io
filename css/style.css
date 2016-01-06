@@ -1,57 +1,48 @@
 html, body {
-  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+section {
+  position: relative;
   width: 100%;
-  margin: 0;
+  color: #FFFFFF; }
+
+#site-wrapper {
   padding: 0; }
 
-body {
-  background-image: url("../assets/skyline-buildings-new-york-skyscrapers-min.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+#home {
+  padding-top: 75px; }
 
-.container-fluid {
-  height: 100%;
-  margin: 0;
-  padding: 0; }
+#home .btn:hover {
+  color: #FFFFFF;
+  background-color: #333333; }
 
-#blog-post, #author-bio, .post-preview {
-  height: 90%;
-  position: relative;
-  padding: 40px 40px; }
+.jumbotron {
+  background: none; }
 
-.post-preview {
-  height: 500px;
-  opacity: 1; }
+.jumbotron a {
+  text-decoration: none; }
 
-.row {
-  height: 100%;
-  padding: 15px;
-  background-color: #FFFFFF;
-  opacity: 0.75;
-  position: relative;
-  border-radius: 25px;
-  box-shadow: 0 0 5px #909090; }
+.cyan-box {
+  background-color: #00dcff; }
 
-.scrolled {
-  opacity: 0; }
+.red-box {
+  background-color: #963232; }
 
-#site-header, #under-header {
-  height: 75px;
-  background-color: #404040; }
+.green-box {
+  background-color: #326432; }
 
-/*
-#site-header {
-	position: fixed;
-	z-index: 9999;
-}
-*/
-#posts-wrapper {
-  /* height: 500px; */
-  background-color: cyan; }
+.project-thumbnail {
+  color: #333333; }
 
-#site-footer {
-  height: 400px;
-  background-color: #404040; }
+.thumbnail:hover {
+  background-color: #64af64; }
+
+.gray-box {
+  background-color: #333333; }
+
+.site-footer .navbar {
+  margin-bottom: 0;
+  border-radius: 0; }
 
 /*# sourceMappingURL=style.css.map */
