@@ -1,0 +1,48 @@
+html, body {
+  margin: 0;
+  padding: 0; }
+
+section {
+  position: relative;
+  width: 100%;
+  color: #FFFFFF; }
+
+#site-wrapper {
+  padding: 0; }
+
+#home {
+  padding-top: 75px; }
+
+#home .btn:hover {
+  color: #FFFFFF;
+  background-color: #333333; }
+
+.jumbotron {
+  background: none; }
+
+.jumbotron a {
+  text-decoration: none; }
+
+.cyan-box {
+  background-color: #00dcff; }
+
+.red-box {
+  background-color: #963232; }
+
+.green-box {
+  background-color: #326432; }
+
+.project-thumbnail {
+  color: #333333; }
+
+.thumbnail:hover {
+  background-color: #64af64; }
+
+.gray-box {
+  background-color: #333333; }
+
+.site-footer .navbar {
+  margin-bottom: 0;
+  border-radius: 0; }
+
+/*# sourceMappingURL=style.css.map */
