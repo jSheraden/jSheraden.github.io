@@ -6,6 +6,6 @@ $(document).ready(function() {
   
   function resizeFrame() {
     var jumbotronPadding = $(window).width() < 750 ? '100px 0' : '220px 0';
-    $('.jumbotron').style({ 'padding': jumbotronPadding });
+    $('.jumbotron').css({ 'padding': jumbotronPadding });
   }
 });
