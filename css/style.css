@@ -34,14 +34,14 @@ body {
 }
 
 .jumbotron.text-center {
-  padding: 220px 0;
+  padding: 0 !important;
   background: transparent;
   color: #FFFFFF; 
 }
 
 .parallax {
   position: relative;
-  height: auto;
+  height: 600px;
   width: 100%;
   margin: 0 auto;
   background-position: 50% 50%;
