@@ -1,12 +1,10 @@
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background: #fff url('./../imgs/mustard_field.jpg') no-repeat fixed center;
-  background-size: cover;
+  background: #fff url('./../imgs/mustard_field.jpg') 0 fixed;
 }
 
 .navbar-nav a, .navbar-brand {
@@ -45,25 +43,29 @@ body {
   color: #FFFFFF; 
 }
 
-.mustard-field-background {
+.parallax {
+  position: relative;
+  height: auto;
   width: 100%;
+  margin: 0 auto;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}
+
+.mustard-field-background {
+
 }
 
 .city-background {
-  width: 100%;
-  background: #fff url('http://i1.wp.com/static.web-backgrounds.net/uploads/2012/08/City_Landscape_Background.jpg') no-repeat fixed center;
-  background-size: cover;
+  background: #fff url('http://i1.wp.com/static.web-backgrounds.net/uploads/2012/08/City_Landscape_Background.jpg') 0 fixed;
 }
 
 .fabric-background {
-  width: 100%;
-  background: #e8e8e8 url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png') repeat;
+  background: #e8e8e8 url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png') 0 fixed;
 }
 
 .dark-background {
-  width: 100%;
-  background: #fff url('http://static.tumblr.com/vy2pzfk/46zls6lto/deserve_bg.jpg') no-repeat fixed center;
-  background-size: cover;
+  background: #fff url('http://static.tumblr.com/vy2pzfk/46zls6lto/deserve_bg.jpg') 0 fixed;
 }
 
 .section {
