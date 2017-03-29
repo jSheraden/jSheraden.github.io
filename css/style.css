@@ -5,6 +5,7 @@ html, body {
 
 body {
   background: #fff url('./../imgs/mustard_field.jpg') 0 fixed;
+  background-size: cover;
 }
 
 .navbar-nav a, .navbar-brand {
@@ -31,6 +32,11 @@ body {
   background: transparent;
   border: none;
   border-bottom: 1px solid #FFFFFF;
+}
+
+.icon-bar {
+  background-color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .jumbotron.text-center {
@@ -77,4 +83,10 @@ body {
 
 .no-border {
   border: none;
+}
+
+@media screen and (max-width: 750px) {
+  .parallax {
+    height: 300px;
+  }
 }
