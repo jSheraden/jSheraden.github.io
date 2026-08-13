@@ -1,0 +1,25 @@
+doctype html
+
+html(lang='en-US')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width; initial-scale=1')
+    link(rel='stylesheet' href='./style.css')
+    script(src='./script.js')
+    title Joseph Sheraden
+  body
+    .site-wrapper
+      h1.site-title Joseph Sheraden
+      .carousel-container
+        .carousel-track
+          .carousel-slide
+            include _welcome
+          .carousel-slide
+            include _about
+          .carousel-slide
+            include _skills
+          .carousel-slide
+            include _services
+          .carousel-slide
+            include _contact
+      h2.copyright &copy; 2026

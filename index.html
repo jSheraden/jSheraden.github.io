@@ -1,90 +1,60 @@
 <!DOCTYPE html>
-
 <html lang="en-US">
-
-<head>
-  <title>Joseph Sheraden</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="./js/script.js"></script>
-  <link rel="stylesheet" href="./css/style.css" media="screen">
-</head>
-
-<body class="parallax" data-scrolling-speed="6">
-  <!-- Site header -->
-  <div class="site-header">
-	<nav class="navbar">
-	  <div class="container">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-menu" aria-expanded="false">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		  </button>
-		  <a href="#" class="navbar-brand">Joseph Sheraden</a>
-		</div>
-		<div id="site-menu" class="collapse navbar-collapse">
-		  <div class="container">
-			<ul class="nav navbar-nav navbar-right">
-			  <li role="presentation"><a href="#">Home</a></li>
-			  <li role="presentation"><a href="#about-me">About Me</a></li>
-			  <li role="presentation"><a href="#contact">Contact</a></li>
-			</ul>
-		  </div>
-		</div>
-	  </div>
-	</nav>
-  </div>
-  
-  <!-- Page intro -->
-  <div id="intro" class="mustard-field-background parallax" data-scrolling-speed="6">
-    <div class="container">
-	  <div class="jumbotron text-center">
-	    <h1>Hey There!</h1>
-		<p>Welcome to my page!</p>
-	  </div>
-	</div>
-  </div>
-  
-  <!-- Second div, contains page info, unused(?) -->
-  <div class="fabric-background"></div>
-  
-  <!-- About me -->
-  <div id="about-me" class="city-background parallax" data-scrolling-speed="8">
-    <div class="container">
-      <div class="jumbotron text-center">
-        <h1>About Me</h1>
-        <p>I'm a web developer living in Austin, Texas!</p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <title>Joseph Sheraden</title>
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <h1 class="site-title">Joseph Sheraden</h1>
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <section class="welcome-section">
+              <h1 class="section-title">Welcome!</h1>
+              <p>This is my personal website!</p>
+              <p>Please swipe right.</p>
+            </section>
+          </div>
+          <div class="carousel-slide">
+            <section class="about-section">
+              <h1 class="section-title">About Me</h1>
+              <p>I am a web developer from Austin, Texas.</p>
+              <p>I have been designing and building websites for about 12 years.</p>
+              <p>This website was written in plain HTML, CSS, and JavaScript.</p>
+            </section>
+          </div>
+          <div class="carousel-slide">
+            <section class="skill-section">
+              <h1 class="section-title">My Skills</h1>
+              <p><span class="skill-list">Front-End:&nbsp;</span><span>HTML, CSS, JavaScript, Vue.js, and Tailwind CSS.</span></p>
+              <p><span class="skill-list">Back-End:&nbsp;</span><span>Python, Flask, JavaScript, and Express.</span></p>
+              <p><span class="skill-list">Database Management:&nbsp;</span><span>SQLite and PostgreSQL.</span></p>
+              <p><span class="skill-list">Command-Line Scripting:&nbsp;</span><span>Python, JavaScript, and Lua.</span></p>
+            </section>
+          </div>
+          <div class="carousel-slide">
+            <section class="services-section">
+              <h1 class="section-title">My Services</h1>
+              <p>I help to bring attention to your business by designing beautiful websites optimized for modern search engines.</p>
+              <p>My professional experience in web development has largely centered on creating themes for the WordPress content management system.</p>
+              <p>However, I have also built web applications using the Vue.js framework and I am open to component-based web development in general.</p>
+            </section>
+          </div>
+          <div class="carousel-slide">
+            <section class="contact-section">
+              <h1 class="section-title">Contact</h1>
+              <p>Here are a few ways in which you can reach me:</p>
+              <p><span class="contact-label">Email:&nbsp;</span><span>josasheraden@gmail.com</span></p>
+              <p><span class="contact-label">GitHub:&nbsp;</span><span>jSheraden</span></p>
+            </section>
+          </div>
+        </div>
       </div>
+      <h2 class="copyright">&copy; 2026</h2>
     </div>
-  </div>
-  
-  <!-- Contact info -->
-  <div id="contact" class="dark-background parallax" data-scrolling-speed="3">
-    <div class="container-fluid">
-	  <div class="jumbotron text-center">
-	    <h1>Contact</h1>
-	    <p>You can get in touch with me at:</p>
-		<p><span class="text-primary">Email:</span> josasheraden@gmail.com</p>
-		<p><span class="text-primary">GitHub:</span> jSheraden</p>
-	  </div>
-	</div>
-  </div>
-  
-  <!-- Page footer -->
-  <div class="page-footer">
-    <div class="page-header footer-content no-border">
-	  <h1>
-	    <small>
-		  <span id="copyright"></span>
-		</small>
-	  </h1>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
