@@ -28,9 +28,10 @@ section {
 .carousel-container {
   width: 100%;
   max-width: 600px;
+  height: 100vh; 
+  height: 100dvh;    
   margin: 0 auto;
   overflow: hidden;
-  aspect-ratio: 4 / 5; 
 }
 
 /* Track acts as the touch/scroll surface */
@@ -89,7 +90,6 @@ section {
 @media (min-width: 575.98px) {
   .carousel-container {
     height: 500px;
-    aspect-ratio: auto; 
   }
 
   .carousel-slide {
