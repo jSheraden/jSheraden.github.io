@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault(); // Stops browser image-dragging or text-highlight bugs
     
     const x = e.pageX - track.offsetLeft;
-    const walk = (x - startX) * 1.5; // Multiplier controls dragging sensitivity
+    const walk = x - startX;
     
     track.scrollLeft = scrollLeft - walk;
   });
