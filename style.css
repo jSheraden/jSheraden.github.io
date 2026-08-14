@@ -61,7 +61,7 @@ section {
   flex: 0 0 auto; /* Each slide occupies full width */
   width: 100%;
   min-width: 0;
-  min-height: 100dvh; /* Necessary for section height to match browser window */
+  height: 100dvh; /* Necessary for section height to match browser window */
   box-sizing: border-box;
   overflow: hidden;
   scroll-snap-align: start;
@@ -78,7 +78,8 @@ section {
 
   @media (min-width: 575.98px) {
     border-radius: 24px;
-    min-height: 500px;
+    height: 500px;
+    max-height: 500px;
   }
 }
 
