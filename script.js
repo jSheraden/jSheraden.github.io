@@ -1,8 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  if (window.matchMedia('(pointer: coarse)').matches) {
-    return;
-  }
-
   const track = document.querySelector('.carousel-track');
   let isDown = false;
   let startX;
