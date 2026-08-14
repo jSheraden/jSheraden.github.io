@@ -30,13 +30,8 @@ section {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
-  
-  /* Use a locked dynamic viewport base on mobile */
-  height: 100dvh;    
-  overflow: hidden; /* Change from visible to block background element bleed-out */
-  
-  /* Kept for mobile, safely overridden on desktop media query below */
-  aspect-ratio: 4 / 5; 
+  height: 480px;
+  overflow: hidden;
 }
 
 /* Track acts as the touch/scroll surface */
@@ -94,7 +89,6 @@ section {
 @media (min-width: 575.98px) {
   .carousel-container {
     height: 500px;
-    aspect-ratio: auto;
   }
 
   .carousel-slide {
