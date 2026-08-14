@@ -61,7 +61,8 @@ section {
   flex: 0 0 auto; /* Each slide occupies full width */
   width: 100%;
   min-width: 0;
-  min-height: 500px;
+  height: auto;
+  min-height: 100dvh; /* Necessary for section height to match browser window */
   scroll-snap-align: start;
   scroll-snap-stop: always; /* Prevents skipping slides on fast flicks */
   
@@ -76,8 +77,7 @@ section {
 
   @media (min-width: 575.98px) {
     border-radius: 24px;
-    height: auto;
-    min-height: 100%;
+    min-height: 500px;
   }
 }
 
