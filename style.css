@@ -4,6 +4,7 @@ html, body {
   color: #f1f1f1;
   background-color: #12161A;
   font-family: Helvetica;
+  overscroll-behavior-y: none; 
 }
 
 section {
@@ -28,24 +29,27 @@ section {
 .carousel-container {
   width: 100%;
   max-width: 600px;
-  height: 100vh; 
-  height: 100dvh;    
   margin: 0 auto;
-  overflow: hidden;
+  
+  /* Use a locked dynamic viewport base on mobile */
+  height: 100dvh;    
+  overflow: hidden; /* Change from visible to block background element bleed-out */
+  
+  /* Kept for mobile, safely overridden on desktop media query below */
+  aspect-ratio: 4 / 5; 
 }
 
 /* Track acts as the touch/scroll surface */
 .carousel-track {
   display: flex;
   overflow-x: auto;
-  overflow-y: hidden;
+  overflow-y: hidden; /* Forcibly shuts down inner vertical text calculation */
   margin: 0;
   padding: 0;
   height: 100%;
   scroll-snap-type: x mandatory; 
   scroll-behavior: smooth; 
   -webkit-overflow-scrolling: touch; 
-  
   touch-action: pan-y pinch-zoom; 
   scrollbar-width: none;
   cursor: grab;
@@ -65,7 +69,7 @@ section {
 
 /* Individual slide dimensions and alignment */
 .carousel-slide {
-  flex: 0 0 auto; 
+  flex: 0 0 100%;
   width: 100%;
   height: 100%; 
   box-sizing: border-box;
@@ -90,6 +94,7 @@ section {
 @media (min-width: 575.98px) {
   .carousel-container {
     height: 500px;
+    aspect-ratio: auto;
   }
 
   .carousel-slide {
