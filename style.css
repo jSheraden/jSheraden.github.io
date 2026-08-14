@@ -39,11 +39,7 @@ section {
   scroll-snap-type: x mandatory; /* Forces the snap behavior */
   scroll-behavior: smooth; /* Smooth gliding motion */
   -webkit-overflow-scrolling: touch; /* Crisp scrolling on older iOS */
-<<<<<<< HEAD
   touch-action: manipulation;
-=======
-  touch-action: pan-x;
->>>>>>> 25bb623d406e6b2d3b4c4cf98388597e4df00257
   scrollbar-width: none;
   cursor: grab;
   list-style: none;
