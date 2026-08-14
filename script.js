@@ -14,23 +14,25 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollLeft = track.scrollLeft;
   });
 
-  // Triggers when pointer moves away or leaves container bounds
-  track.addEventListener('mouseleave', () => {
+  // Reusable function to wrap up the dragging state
+  const stopDragging = () => {
     if (!isDown) return;
+
     isDown = false;
     track.classList.remove('is-dragging');
-  });
-  
-  // Triggers when click pressure is released
-  track.addEventListener('mouseup', () => {
-    if (!isDown) return;
-    isDown = false;
-    track.classList.remove('is-dragging');
-  });
-  
+
+    // Force the browser to snap to the nearest slide upon release
+    const currentScroll = track.scrollLeft;
+    track.scrollLeft = currentScroll;
+  }
+
+  track.addEventListener('mouseleave', stopDragging);
+  track.addEventListener('mouseup', stopDragging);
+
   // Tracks actual dragging motion across the X-axis
   track.addEventListener('mousemove', (e) => {
     if (!isDown) return; // Ignore movement if mouse button isn't held down
+
     e.preventDefault(); // Stops browser image-dragging or text-highlight bugs
     
     const x = e.pageX - track.offsetLeft;
