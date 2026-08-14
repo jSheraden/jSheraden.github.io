@@ -76,6 +76,8 @@ section {
 
   @media (min-width: 575.98px) {
     border-radius: 24px;
+    height: auto;
+    min-height: 100%;
   }
 }
 
