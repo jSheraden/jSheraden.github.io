@@ -61,7 +61,7 @@
   width: 100%;
   min-width: 0;
   height: auto;
-  min-height: 100dvh;
+  min-height: 89dvh;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   display: flex;
