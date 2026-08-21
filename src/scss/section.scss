@@ -1,0 +1,47 @@
+@use "fadeIn";
+
+section {
+  padding: 10px 20px;
+  background-color: #12161A;
+}
+
+.welcome-section,
+.about-section,
+.skills-section,
+.services-section,
+.contact-section {
+  background-color: rgb(0 0 0 / 30%);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.welcome-section {
+  color: #1A2026;
+}
+
+.welcome-bg {
+  background: url('img/mustard_field.jpg') center / cover no-repeat;
+}
+
+.about-bg {
+  background: url('img/austin_skyline.jpg') center / 300% no-repeat;
+}
+
+.skills-bg {
+  background: url('img/code_editor.jpg') center / cover no-repeat;
+}
+
+.services-bg {
+  background: url('img/laptop.jpg') center / cover no-repeat;
+}
+
+.contact-bg {
+  background: url('img/smartphone.jpg') center / cover no-repeat;
+}
+
+@media (min-width: 575.98px) {
+  section {
+    border-radius: 24px;
+  }
+}
+

@@ -1,13 +1,141 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.fade-in-navbar, .site-title,
+.copyright {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.fade-in-section, .carousel-track {
+  opacity: 0;
+  animation: fadeIn 1s forwards 1s;
+}
+
+.fade-in-content {
+  opacity: 0;
+  animation: fadeIn 1s forwards 2s;
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y touch-zoom;
+  scrollbar-width: none;
+  cursor: grab;
+  list-style: none;
+}
+
+.carousel-track.is-dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+  cursor: grabbing;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-slide {
+  flex: 0 0 auto;
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  min-height: 100dvh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  font-size: 1.5rem;
+  overflow: hidden;
+}
+
+/*
+.carousel-slide:nth-child(even) {
+  background: #2ecc71;
+}
+*/
+@media (min-width: 575.98px) {
+  .carousel-track {
+    border-radius: 24px;
+  }
+  .carousel-slide {
+    min-height: 500px;
+  }
+}
+section {
+  padding: 10px 20px;
+  background-color: #12161A;
+}
+
+.welcome-section,
+.about-section,
+.skills-section,
+.services-section,
+.contact-section {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.welcome-section {
+  color: #1A2026;
+}
+
+.welcome-bg {
+  background: url("img/mustard_field.jpg") center/cover no-repeat;
+}
+
+.about-bg {
+  background: url("img/austin_skyline.jpg") center/300% no-repeat;
+}
+
+.skills-bg {
+  background: url("img/code_editor.jpg") center/cover no-repeat;
+}
+
+.services-bg {
+  background: url("img/laptop.jpg") center/cover no-repeat;
+}
+
+.contact-bg {
+  background: url("img/smartphone.jpg") center/cover no-repeat;
+}
+
+@media (min-width: 575.98px) {
+  section {
+    border-radius: 24px;
+  }
+}
 html, body {
   margin: 0;
   padding: 0;
   color: #f1f1f1;
   background-color: #12161A;
+  background: url("img/noisy_net.png") repeat;
   font-family: Helvetica;
-}
-
-section {
-  padding: 0 20px;
 }
 
 .site-title,
@@ -24,64 +152,4 @@ section {
   color: cyan;
 }
 
-/* Container forces a single layout view */
-.carousel-container {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  overflow: visible;
-}
-
-/* Track acts as the touch/scroll surface */
-.carousel-track {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory; /* Forces the snap behavior */
-  scroll-behavior: smooth; /* Smooth gliding motion */
-  -webkit-overflow-scrolling: touch; /* Crisp scrolling on older iOS */
-  touch-action: pan-y touch-zoom;
-  scrollbar-width: none;
-  cursor: grab;
-  list-style: none;
-}
-
-.carousel-track.is-dragging {
-  scroll-snap-type: none;
-  scroll-behavior: auto;
-  cursor: grabbing;
-}
-
-/* Hide default scrollbars for a clean look */
-.carousel-track::-webkit-scrollbar {
-  display: none;
-}
-
-/* Individual slide dimensions and alignment */
-.carousel-slide {
-  flex: 0 0 auto; /* Each slide occupies full width */
-  width: 100%;
-  min-width: 0;
-  height: auto;
-  min-height: 100dvh; /* Necessary for section height to match browser window */
-  scroll-snap-align: start;
-  scroll-snap-stop: always; /* Prevents skipping slides on fast flicks */
-  
-  /* Decorative styles */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  user-select: none;
-  background: #3498db;
-  color: #1A2026;
-  font-size: 1.5rem;
-
-  @media (min-width: 575.98px) {
-    border-radius: 24px;
-    min-height: 500px;
-  }
-}
-
-.carousel-slide:nth-child(even) {
-  background: #2ecc71;
-}
-
+/*# sourceMappingURL=style.css.map */

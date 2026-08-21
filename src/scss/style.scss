@@ -1,0 +1,32 @@
+@use "fadeIn";
+@use "carousel";
+@use "section";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #f1f1f1;
+  background-color: #12161A;
+  background: url('img/noisy_net.png') repeat;
+  font-family: Helvetica;
+}
+
+.site-title,
+.section-title,
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.site-title,
+.copyright {
+  @extend .fade-in-navbar;
+}
+
+.skill-list,
+.contact-label {
+  color: cyan;
+}
+
